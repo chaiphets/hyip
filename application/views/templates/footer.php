@@ -8,7 +8,7 @@
 	      	<a class="label label-info" href="#">Sign Up</a>
 	      	<a class="label label-info" href="#">Login</a>
 	      	<a class="label label-info" href="#">Investment Plant</a>
-	      	<a class="label label-info" href="#">Term</a>
+	      	<a class="label label-info" href="<?=site_url('term')?>">Terms</a>
 	      	<a class="label label-info" href="#">F.A.Q</a>
 	      	<a class="label label-info" href="#">Support</a>
       	</h4>

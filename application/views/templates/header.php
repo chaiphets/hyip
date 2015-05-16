@@ -93,7 +93,7 @@
       	<li><a href="#">Sign Up</a></li>
       	<li><a href="#">Login</a></li>
       	<li><a href="#">Investment Plant</a></li>
-      	<li><a href="#">Term</a></li>
+      	<li><a href="<?=site_url('term')?>">Terms</a></li>
       	<li><a href="#">F.A.Q</a></li>
       	<li><a href="#">Support</a></li>
       	<?php if($user):?>
