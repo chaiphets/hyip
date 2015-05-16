@@ -100,10 +100,10 @@
       	<li><a href="<?=site_url()?>">HOME</a></li>
       	<li><a href="#">SIGN UP</a></li>
       	<li><a href="<?=site_url('authentication/authen')?>">LOGIN</a></li>
-      	<li><a href="#">INVESTMENT PLAN</a></li>
+      	<li><a href="<?=site_url('invest')?>">INVESTMENT PLAN</a></li>
       	<li><a href="<?=site_url('term')?>">TERMS</a></li>
-      	<li><a href="#">F.A.Q</a></li>
-      	<li><a href="#">SUPPORT</a></li>
+      	<li><a href="<?=site_url('faq')?>">F.A.Q</a></li>
+      	<li><a href="<?=site_url('support')?>">SUPPORT</a></li>
       	<?php if($user):?>
         <!--li><a href="#">Meterial</a></li>
         <li><a href="#">Task</a></li-->

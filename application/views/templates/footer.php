@@ -4,13 +4,13 @@
 <div class="footer">
 	<div class="col-xs-12 col-sm-12 col-md-12">
 		<h4 class="text-center" style="margin-top: 0px;">
-			<a class="label label-primary" href="<?=site_url()?>">Home</a>
-	      	<a class="label label-primary" href="#">Sign Up</a>
-	      	<a class="label label-primary" href="<?=site_url('authentication/authen')?>">Login</a>
-	      	<a class="label label-primary" href="#">Investment Plant</a>
-	      	<a class="label label-primary" href="<?=site_url('term')?>">Terms</a>
-	      	<a class="label label-primary" href="#">F.A.Q</a>
-	      	<a class="label label-primary" href="#">Support</a>
+			<a class="label label-default" href="<?=site_url()?>">Home</a>
+	      	<a class="label label-default" href="#">Sign Up</a>
+	      	<a class="label label-default" href="<?=site_url('authentication/authen')?>">Login</a>
+	      	<a class="label label-default" href="<?=site_url('invest')?>">Investment Plant</a>
+	      	<a class="label label-default" href="<?=site_url('term')?>">Terms</a>
+	      	<a class="label label-default" href="<?=site_url('faq')?>">F.A.Q</a>
+	      	<a class="label label-default" href="<?=site_url('support')?>">Support</a>
       	</h4>
 		<br>
 		<small>

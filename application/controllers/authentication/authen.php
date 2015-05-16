@@ -14,7 +14,7 @@ class Authen extends CI_Controller{
 			redirect('');
 		
 		$user = $this->input->post();
-		$this->form_validation->set_rules('username', 'Username', 'min_length[6]');
+		$this->form_validation->set_rules('username', 'Email', 'min_length[6]');
 		$this->form_validation->set_rules('password', 'Password', 'min_length[6]');
 		$this->form_validation->set_rules('url', 'URL');
 		if ($this->form_validation->run() == FALSE){
@@ -26,7 +26,7 @@ class Authen extends CI_Controller{
 		unset($user['url']);
 		$user = $this->authen_model->login($user);
 		if(!$user){
-			$data['login_error'] = "Email or password is invalid";
+			$data['login_error'] = "Email or Password is invalid";
 			$this->template->load('authentication/login', $data);
 		} else {
 			$this->session->set_userdata('user', $user);
