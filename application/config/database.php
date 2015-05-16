@@ -49,11 +49,11 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'fgcom_fastgood';
-$db['default']['password'] = '18082014';
-$db['default']['database'] = 'fgcom_fastgood';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'saeoun';
+$db['default']['database'] = 'hyip';
 $db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
+$db['default']['dbprefix'] = 'hyip_';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;

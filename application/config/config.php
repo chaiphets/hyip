@@ -10,11 +10,13 @@
 |
 |	http://example.com/
 |
-| If this is not set then CodeIgniter will guess the protocol, domain and
-| path to your installation.
+| If this is not set then CodeIgniter will try to guess the protocol, domain
+| and path to your installation. However, you should always configure this
+| explicitly and never rely on auto-guessing, especially in production
+| environments.
 |
 */
-$config['base_url']	= '';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +226,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'fastgood';
+$config['encryption_key'] = 'hyip';
 
 /*
 |--------------------------------------------------------------------------
@@ -244,8 +246,8 @@ $config['encryption_key'] = 'fastgood';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'fastgood_session';
-$config['sess_expiration']		= 86400;
+$config['sess_cookie_name']		= 'hyip_session';
+$config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= TRUE;
 $config['sess_use_database']	= FALSE;
@@ -294,8 +296,8 @@ $config['global_xss_filtering'] = TRUE;
 | 'csrf_expire' = The number in seconds the token should expire.
 */
 $config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'csrf_fastgood';
-$config['csrf_cookie_name'] = 'csrf_fastgood';
+$config['csrf_token_name'] = 'csrf_hyip';
+$config['csrf_cookie_name'] = 'csrf_hyip';
 $config['csrf_expire'] = 7200;
 
 /*

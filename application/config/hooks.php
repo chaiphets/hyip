@@ -10,11 +10,6 @@
 |
 */
 
-
-
-/* End of file hooks.php */
-/* Location: ./application/config/hooks.php */
-
 $hook['post_controller_constructor'] = array(
 					            'class'    => 'Authorization',
 					            'function' => 'authorize',
@@ -22,3 +17,6 @@ $hook['post_controller_constructor'] = array(
 					            'filepath' => 'hooks',
 					            'params'   => array()
 					            );
+
+/* End of file hooks.php */
+/* Location: ./application/config/hooks.php */
