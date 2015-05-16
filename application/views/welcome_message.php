@@ -1,121 +1,69 @@
-<script type="text/javascript" src="<?=base_url('lib/jquery/plugins/mixitup/jquery.mixitup.min.js')?>"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to CodeIgniter</title>
+</head>
+<body>
 
-<script>
-	$(document).ready(function(){
-		$('#home').mixItUp({
-			load: {
-				sort: 'postingid:desc'
-			}
-		});
-	});
-</script>
+<div id="container">
+	<!-- <h1>Welcome to CodeIgniter!</h1>
 
-<style>
-	.mix{
-		display: none;
-	}
-</style>
+	<div id="body">
+		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
-<div class="row hidden">
-	<div class="col-md-12">
-		Chawanat : <?=crypt('Chawanat','fastgood')?>
-		<br>
-		Choncharn : <?=crypt('Choncharn','fastgood')?>
-		<br>
-		Chaiphet : <?=crypt('Chaiphet','fastgood')?>
+		<p>If you would like to edit this page you'll find it located at:</p>
+		<code>application/views/welcome_message.php</code>
+
+		<p>The corresponding controller for this page is found at:</p>
+		<code>application/controllers/welcome.php</code>
+
+		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
-</div>
-<div class="row hidden">
-	<div class="col-xs-12 col-md-4">
-		<?=now();?><br>
-		<?=local_to_gmt(now());?><br>
-		<?=date('Y-m-d H:i:s', local_to_gmt(now()));?><br>
-	</div>
-</div>
-<div class="row">
-	<h3 class="col-xs-12 col-md-12" style="margin-top: 0px;">เห็นแล้วหิว</h3>
-</div>
 
-<div class="row">
-	<div class="col-xs-12 col-sm-6 col-md-5">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				Who post
-			</div>
-			<div class="panel-body btn-group">
-				<button class="btn btn-default filter" data-filter="all">All</button>
-				<button class="btn btn-default filter" data-filter=".Choncharn">Choncharn</button>
-				<button class="btn btn-default filter" data-filter=".Chawanat">Chawanat</button>
-				<button class="btn btn-default filter" data-filter=".Chaiphet">Chaiphet</button>
-			</div>
+	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p> -->
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8">
+			<img class="img-responsive" style="width: 100%; height: 200px;">
 		</div>
 	</div>
-	<div class="col-xs-12 col-sm-4 col-md-3">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				Sort by posting date
-			</div>
-			<div class="panel-body btn-group">
-				<button class="btn btn-default sort" data-sort="postingid:asc">ASC</button>
-				<button class="btn btn-default sort" data-sort="postingid:desc">DESC</button>
-			</div>
-		</div>
-	</div>
-</div>
-<!--div class="row thumbnail">
-	<div class="col-xs-12 col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
-		<button class="btn btn-info btn-block filter" data-filter="all">All</button>
-	</div>
-	<div class="col-xs-4 col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
-		<button class="btn btn-default btn-block filter" data-filter=".Chaiphet">Chaiphet</button>
-	</div>
-	<div class="col-xs-4 col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
-		<button class="btn btn-default btn-block filter" data-filter=".Choncharn">Choncharn</button>
-	</div>
-	<div class="col-xs-4 col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
-		<button class="btn btn-default btn-block filter" data-filter=".Chawanat">Chawanat</button>
-	</div>
-</div>
-<div class="row thumbnail">
-	<div class="col-xs-12 col-md-3 hidden" style="margin-top: 10px; margin-bottom: 10px;">
-		<button class="btn btn-primary btn-block sort" data-sort="random">Random</button>
-	</div>
-	<div class="col-xs-6 col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
-		<button class="btn btn-default btn-block sort" data-sort="postingid:asc">ASC</button>
-	</div>
-	<div class="col-xs-6 col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
-		<button class="btn btn-default btn-block sort" data-sort="postingid:desc">DESC</button>
-	</div>
-</div-->
-
-<div class="row" id="home">
-	<?php foreach ($postMenus as $key => $postMenu):?>
-		<div class="col-xs-12 col-sm-4 col-md-3 mix <?=$postMenu['first_name']?>" style="padding: 5px;" data-postingid="<?=$postMenu['posting_id']?>">
-			<div class="thumbnail">
-				<img src="<?=base_url('img/home/'.$postMenu['upload_file_name'])?>" class="img-responsive" 
-					style="cursor: pointer;" data-title="<?=$postMenu['first_name']?> <?=$postMenu['date']?>" data-caption="<?=$postMenu['caption']?>">
-				<div class="caption" style="display: none;">
-					<?=$postMenu['caption']?><br>by <?=$postMenu['first_name']?> <?=$postMenu['date']?><br>
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<p>
+					<strong>ForexDBLot - Reliable and Professional financial management.</strong> 
+					</p>
+					<p>
+					In a nutshell, ForexDBLot.com is a financial company. Founded in 2012, we began with brick-and-mortar offline trading operations and gradually evolved into an online financial company that trades forex, stocks and derivatives while maintaining extensive offline operations. The legal entity behind ForexDBLot is FOREX FINANCE LIMITED.
+					</p>
+					<p>
+					We quickly adapt to the rapidly changing market conditions and needs. Our business is strategically diversified to minimize risk. Just as importantly, through investing with us you will have an unsurpassed opportunity to earn a much greater return than most financial institutions can offer.
+					</p>
+					<p>
+					Many corporations and individuals have found ForexDBLot a rewarding place to invest. We hope you'll join us and discover these rewards for yourself.
+					</p>
 				</div>
 			</div>
 		</div>
-	<?php endforeach;?>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-8">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Investment Plan
+				</div>
+				<div class="panel-body">
+					4 plans
+				</div>
+			</div>
+		</div>
+	</div>
+	
 </div>
 
-<script>
-	$(function(){
-		var element = document.querySelectorAll('img');
-    	Intense( element );
-    	
-    	$('img').hover(
-    		function(){
-    			$(this).fadeTo(100, 0.7);
-    			//$('.captions', $(this).parent()).fadeIn(100);
-    		},
-    		function(){
-    			$(this).fadeTo(100, 1);
-    			//$('.captions', $(this).parent()).fadeOut(100);
-    		}
-    	);
-	});
-</script>
+</body>
+</html>

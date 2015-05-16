@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Fast Good</title>
-	<meta name="description" content="ร้านอาหารเพื่อสุขภาพ ภายในโรงอาหาร SCG ที่มีชื่อว่า Fast Good ทั้งเร็ว และดีต่อสุขภาพ ไม่ต้องต่อคิวนาน">
+	<title>ForexDBLot - Reliable and Professional financial management</title>
+	<meta name="description" content="Gold, HYIP, High Yield Invesmtent, High Yield Investments, High Yield Investment Program, Forex DB Lot, Residual Income, Online Investments, Market trends, Trading, Managed Account, Best Investment Program, the oldest investment program">
+	<meta name="keywords" content="Gold, HYIP, High Yield Invesmtent, High Yield Investments, High Yield Investment Program, Forex DB Lot, Residual Income, Online Investments, Market trends, Trading, Managed Account, Best Investment Program, the oldest investment program">
 	
 	<link href="<?=base_url('lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
 	<link href="<?=base_url('lib/bootstrap/css/datepicker3.css')?>" rel="stylesheet">
@@ -27,6 +28,19 @@
 			width: 16px;
 			height: 16px;
 			margin: 0;
+		}
+		.row{
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.navbar{
+			margin-bottom: 0px;
+		}
+		.panel{
+			margin-bottom: 0px;
+		}
+		p{
+			margin: 0 0 20px;
 		}
 	</style>
 	<script>
@@ -70,11 +84,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?=site_url()?>">Fast Good</a>
+      <a class="navbar-brand" href="<?=site_url()?>">ForexDBLot.com</a>
     </div>
     
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="<?=site_url()?>">Home</a></li>
+      	<li><a href="#">Sign Up</a></li>
+      	<li><a href="#">Login</a></li>
+      	<li><a href="#">Investment Plant</a></li>
+      	<li><a href="#">Term</a></li>
+      	<li><a href="#">F.A.Q</a></li>
+      	<li><a href="#">Support</a></li>
       	<?php if($user):?>
         <!--li><a href="#">Meterial</a></li>
         <li><a href="#">Task</a></li-->
@@ -97,14 +118,14 @@
         <?php endif;?>
       </ul>
       
-      <ul class="nav navbar-nav navbar-right">
+      <!--ul class="nav navbar-nav navbar-right">
       	<?php if($user):?>
       	<li><p class="navbar-text">Sign in as <?=$user['first_name']?></p></li>
 		<li><button type="button" class="btn btn-default navbar-btn" onclick="window.location='<?=site_url('authentication/authen/logout')?>'">Sign out</button></li>
 		<?php else:?>
 		<li><button type="button" class="btn btn-default navbar-btn" onclick="window.location='<?=site_url('authentication/authen/login')?>'">Sign in</button></li>
 		<?php endif;?>
-      </ul>
+      </ul-->
       
     </div><!--/.nav-collapse -->
   </div>

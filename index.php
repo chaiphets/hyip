@@ -36,7 +36,7 @@ if (defined('ENVIRONMENT'))
 			error_reporting(E_ALL);
 			define('GMT', '0');
 		break;
-	
+
 		case 'testing':
 		case 'production':
 			error_reporting(0);

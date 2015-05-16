@@ -17,12 +17,9 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index() {
-		//$this->load->view('welcome_message');
-		//$data['title'] = "Rabbiters";
-		$this->load->model('postmenu/postmenu_model');
-		$data['postMenus'] = $this->postmenu_model->getAllPostMenus();
-		$this->template->load('welcome_message', $data);
+	public function index()
+	{
+		$this->template->load('welcome_message');
 	}
 }
 
