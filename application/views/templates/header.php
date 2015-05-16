@@ -99,7 +99,7 @@
       <ul class="nav navbar-nav navbar-right" id="nav-menu">
       	<li><a href="<?=site_url()?>">HOME</a></li>
       	<li><a href="#">SIGN UP</a></li>
-      	<li><a href="#">LOGIN</a></li>
+      	<li><a href="<?=site_url('authentication/authen')?>">LOGIN</a></li>
       	<li><a href="#">INVESTMENT PLAN</a></li>
       	<li><a href="<?=site_url('term')?>">TERMS</a></li>
       	<li><a href="#">F.A.Q</a></li>

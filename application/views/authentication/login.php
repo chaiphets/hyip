@@ -1,16 +1,43 @@
-<div style="max-width: 330px;margin: auto;">
+<div style="max-width: 390px; margin: auto; margin-top: 5px;">
 	<?=form_open('authentication/authen/login')?>
-		<h2>Sign in</h2>
-		<input type="text" name="username" class="form-control" placeholder="username" value="<?=set_value('username')?>" required maxlength="32" />
-		<?=form_error('username','<div class="validation-error">','</div>')?>
-		<input type="password" name="password" class="form-control" placeholder="password" value="<?=set_value('password')?>" required />
-		<?=form_error('password','<div class="validation-error">','</div>')?>
-		<div class="validation-error">
-			<?=isset($login_error)?$login_error:""?>
+		<div class="panel panel-default">
+			<div class="panel-heading">Account Login</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-3">Email:</div>
+					<div class="col-md-9">
+						<input class="form-control" type="text" name="username" value="<?=set_value('username')?>" required maxlength="64" />
+						<?=form_error('username','<div class="validation-error">','</div>')?>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">Password:</div>
+					<div class="col-md-9">
+						<input class="form-control" type="password" name="password" value="<?=set_value('password')?>" required />
+						<?=form_error('password','<div class="validation-error">','</div>')?>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 validation-error">
+						<?=isset($login_error)?$login_error:""?>
+					</div>
+					<div class="col-md-12">
+						<button class="btn btn-primary btn-block">Sign in</button>
+					</div>
+				</div>
+				<div class="row">
+					<small>
+					<div class="col-md-6">
+						<a href="#">Create Account</a>
+					</div>
+					<div class="col-md-6">
+						<a href="#">Password Recovery</a>
+					</div>
+					</small>
+				</div>
+			</div>
 		</div>
-		<br>
 		<input type="hidden" id="url" name="url" value="<?=set_value('url')?>" />
-		<input type="submit" id="submitBtn" class="btn btn-lg btn-primary btn-block" value="Sign In" />
 	</form>
 </div>
 

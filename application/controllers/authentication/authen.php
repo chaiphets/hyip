@@ -26,7 +26,7 @@ class Authen extends CI_Controller{
 		unset($user['url']);
 		$user = $this->authen_model->login($user);
 		if(!$user){
-			$data['login_error'] = "Username or password is invalid";
+			$data['login_error'] = "Email or password is invalid";
 			$this->template->load('authentication/login', $data);
 		} else {
 			$this->session->set_userdata('user', $user);
