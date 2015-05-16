@@ -45,6 +45,14 @@
 	</style>
 	<script>
 		$(document).ready(function(){
+			$('li','#nav-menu')
+			.mouseenter(function(){
+				$(this).addClass('active');
+			})
+			.mouseout(function(){
+				$(this).removeClass('active');
+			});
+			
 			var delayInit = 5000;
 			var delayEach = 2000;
 			$('.autoclose').each(function(){
@@ -88,14 +96,14 @@
     </div>
     
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-      	<li><a href="<?=site_url()?>">Home</a></li>
-      	<li><a href="#">Sign Up</a></li>
-      	<li><a href="#">Login</a></li>
-      	<li><a href="#">Investment Plant</a></li>
-      	<li><a href="<?=site_url('term')?>">Terms</a></li>
+      <ul class="nav navbar-nav navbar-right" id="nav-menu">
+      	<li><a href="<?=site_url()?>">HOME</a></li>
+      	<li><a href="#">SIGN UP</a></li>
+      	<li><a href="#">LOGIN</a></li>
+      	<li><a href="#">INVESTMENT PLAN</a></li>
+      	<li><a href="<?=site_url('term')?>">TERMS</a></li>
       	<li><a href="#">F.A.Q</a></li>
-      	<li><a href="#">Support</a></li>
+      	<li><a href="#">SUPPORT</a></li>
       	<?php if($user):?>
         <!--li><a href="#">Meterial</a></li>
         <li><a href="#">Task</a></li-->
