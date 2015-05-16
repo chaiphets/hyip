@@ -1,6 +1,6 @@
 <div style="max-width: 390px; margin: auto; margin-top: 5px;">
 	<?=form_open('authentication/authen/login')?>
-		<div class="panel panel-success">
+		<div class="panel panel-info">
 			<div class="panel-heading">Account Login</div>
 			<div class="panel-body">
 				<div class="row">
@@ -22,7 +22,7 @@
 						<?=isset($login_error)?$login_error:""?>
 					</div>
 					<div class="col-md-12">
-						<button class="btn btn-success btn-block">Sign in</button>
+						<button class="btn btn-info btn-block">Sign in</button>
 					</div>
 				</div>
 				<div class="row">
