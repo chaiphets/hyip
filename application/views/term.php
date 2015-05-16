@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12">
-		<div class="panel panel-default">
+		<div class="panel panel-primary">
 			<div class="panel-heading"><h2>Terms and Conditions</h2></div>
 			<div class="panel-body">
 				<strong>User Agreement and Terms of Use of ForexDBLot</strong>
