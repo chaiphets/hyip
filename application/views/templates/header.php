@@ -37,7 +37,7 @@
 			margin-bottom: 0px;
 		}
 		.panel{
-			margin-bottom: 0px;
+			/*margin-bottom: 0px;*/
 		}
 		p{
 			margin: 0 0 20px;
