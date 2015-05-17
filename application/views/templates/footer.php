@@ -7,7 +7,7 @@
 			<a class="label label-default" href="<?=site_url()?>">Home</a>
 	      	<a class="label label-default" href="#">Sign Up</a>
 	      	<a class="label label-default" href="<?=site_url('authentication/authen')?>">Login</a>
-	      	<a class="label label-default" href="<?=site_url('invest')?>">Investment Plant</a>
+	      	<a class="label label-default" href="<?=site_url('investment')?>">Investment Plant</a>
 	      	<a class="label label-default" href="<?=site_url('term')?>">Terms</a>
 	      	<a class="label label-default" href="<?=site_url('faq')?>">F.A.Q</a>
 	      	<a class="label label-default" href="<?=site_url('support')?>">Support</a>
