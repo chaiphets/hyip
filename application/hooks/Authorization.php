@@ -10,8 +10,12 @@ class Authorization {
 	public function authorize(){
 		// var_dump($this->ci->router->class);
 		$this->ci->load->model('authentication/authen_model');
+		$user = $this->ci->session->userdata('user');
 		$authorize = $this->ci->authen_model->authorize($this->ci->router->class);
-		if($authorize && !$this->ci->session->userdata('user'))
+		// if($authorize && !$this->ci->session->userdata('user'))
+			// show_error('You have no authorize to access this page, please <a href="'.site_url('authentication/authen/login?url='.current_url()).'">sign in</a> or go to <a href="'.site_url().'">home</a>');
+		
+		if(!$user && $authorize != null && $authorize['role'] != $user['role'])
 			show_error('You have no authorize to access this page, please <a href="'.site_url('authentication/authen/login?url='.current_url()).'">sign in</a> or go to <a href="'.site_url().'">home</a>');
 	}
 }

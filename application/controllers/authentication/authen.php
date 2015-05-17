@@ -10,8 +10,14 @@ class Authen extends CI_Controller{
 		$this->template->load('authentication/login');
 	}
 	public function login(){
-		if($this->session->userdata('user'))
-			redirect('');
+		$user = $this->session->userdata('user');
+		if($user){
+			if($user['role'] == 'admin'){
+				redirect('');						//FIXME redirect to admin page
+			} else {
+				redirect('');						//FIXME redirect to user home page
+			}
+		}
 		
 		$user = $this->input->post();
 		$this->form_validation->set_rules('username', 'Email', 'min_length[6]');
