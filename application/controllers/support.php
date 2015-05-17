@@ -21,6 +21,13 @@ class Support extends CI_Controller {
 	{
 		$this->template->loadPublic('support');
 	}
+	
+	public function submit()
+	{
+		$this->load->model('support_model');
+		$this->support_model->createSupport($this->input->post());
+		$this->template->loadPublic('support');
+	}
 }
 
 /* End of file welcome.php */

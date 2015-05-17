@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Model_util extends CI_Model {
-	function getNewId($tableName, $columnName){
+	function getNewIdByTableAndColumn($tableName, $columnName){
 		$this->db->order_by($columnName, 'desc');
 		$query = $this->db->get($tableName);
 		$newId = 1;
@@ -8,5 +8,9 @@ class Model_util extends CI_Model {
 		if($last)
 			$newId = intval($last[$columnName]) + 1;
 		return $newId;
+	}
+	
+	function getNewIdByTable($tableName){
+		return $this->getNewIdByTableAndColumn($tableName, 'id');
 	}
 }
