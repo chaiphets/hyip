@@ -8,7 +8,12 @@
 		<div class="panel panel-success">
 			<div class="panel-heading">Day Online</div>
 			<div class="panel-body">
-				xxx days
+				<b>DAY ONLINE: 
+				<?php
+					$startDay = new DateTime('2015-05-17');
+					$nowDay = new DateTime();
+					echo $startDay->diff($nowDay)->days;
+				?> DAYS</b>
 			</div>
 		</div>
 		
