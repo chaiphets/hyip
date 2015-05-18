@@ -1,3 +1,9 @@
+<style>
+	.bordered{
+		border: solid 1px;
+	}
+</style>
+
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12">
 		<div class="panel panel-default">
@@ -31,10 +37,13 @@
 			WE ACCEPT
 		</div>
 		<div class="col-xs-3 col-sm-3 col-md-3">
+			<img class="img-responsive bordered" src="<?=base_url('img/home/paysbuy.png')?>" />
+		</div>
+		<div class="col-xs-3 col-sm-3 col-md-3">
 			<img class="img-responsive" src="<?=base_url('img/home/perfect-money.png')?>" />
 		</div>
 		<div class="col-xs-3 col-sm-3 col-md-3">
-			<img class="img-responsive" src="<?=base_url('img/home/okpay.png')?>" />
+			<img class="img-responsive bordered" src="<?=base_url('img/home/okpay.png')?>" />
 		</div>
 	</div>
 </div>
