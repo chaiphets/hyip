@@ -25,11 +25,13 @@
 			</div>
 		</div>
 		
+		<?php if($this->router->class != 'investment'):?>
 		<div class="panel panel-success">
 			<div class="panel-heading">Calculate Your Profit</div>
 			<div class="panel-body">
-				Amount<br>
+				<?=$this->load->view('calculate_profit')?>
 			</div>
 		</div>
+		<?php endif;?>
 	</div>
 </div>

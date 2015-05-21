@@ -99,6 +99,9 @@
 				
 				<b>Compounding</b>
 				<p>
+					Compounding is not available for any investment plan because of our plan is offer the best profit.
+				</p>
+				<!--p>
 					You can compound your interest if you desire.
 				</p><p>
 					Compounding allows an investor to earn an interest not only on the original investment, but also on the reinvestment of his/her daily income.
@@ -106,9 +109,20 @@
 					You can choose all or part of your daily income to be reinvested.
 				</p><p>
 					You are welcome to use our Calculator to better understand the effect of compounding.
-				</p>
+				</p-->
 				
 				<?php endif;?>
+				
+				<br>
+				<br>
+				<div class="col-xs-12 col-sm-8 col-md-10">
+					<div class="panel panel-success">
+						<div class="panel-heading">Deposit calculator</div>
+						<div class="panel-body">
+							<?=$this->load->view('calculate_profit')?>
+						</div>
+					</div>
+				</div>
 				
 			</div>
 		</div>

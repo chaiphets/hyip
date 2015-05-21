@@ -42,6 +42,9 @@
 		p{
 			margin: 0 0 20px;
 		}
+		.hidden{
+			display: none;
+		}
 	</style>
 	<script>
 		$(document).ready(function(){
