@@ -39,7 +39,7 @@
 	<tr><td>Daily average interest rate:</td><td><div id="interest-rate-daily">0.6% business daily</div></td></tr>
 	<tr><td>Term:</td><td>60 business days</td></tr>
 	<tr><td>Profit:</td><td><div id="profit">$3 weekly</div></td></tr>
-	<tr><td>Dialy average profit:</td><td><div id="profit-daily">$0.6 business daily</div></td></tr>
+	<tr><td>Daily average profit:</td><td><div id="profit-daily">$0.6 business daily</div></td></tr>
 	<tr><td>Total profit:<br><small>(after 60 business days)</small></td><td><div id="total-profit">$36</div></td></tr>
 	<tr><td><b>Total return:<br><small>(Profit+Principal)</small></b></td><td><b><div id="total-return">$136</div></b></td></tr>
 </table>

@@ -45,14 +45,16 @@
 		.hidden{
 			display: none;
 		}
+		.text-middle{
+			vertical-align: middle !important;
+		}
 	</style>
 	<script>
 		$(document).ready(function(){
 			$('li','#nav-menu')
-			.mouseenter(function(){
+			.hover(function(){
 				$(this).addClass('active');
-			})
-			.mouseout(function(){
+			}, function(){
 				$(this).removeClass('active');
 			});
 			

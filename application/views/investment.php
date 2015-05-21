@@ -18,40 +18,44 @@
 					<table class="table table-bordered">
 						<thead><th>Plan</th><th>Weekly</th><th>Monthly</th></thead>
 						<tbody class="text-center">
-						<tr><td class="text-right">Basic</td>
-							<td><b>Basic Weekly Partner</b><br>
+						<tr><td class="text-right text-middle">Basic</td>
+							<td class="plan"><h4><b>Basic Weekly Partner</b></h4><br>
 								<b>3%weekly</b><br>
-								for 60 business days<br>
-								Deposit: $100<br>
+								<small>for 60 business days</small><br>
+								<hr style="width: 80%; margin-top: 7px; margin-bottom: 7px;">
+								<div class="deposit-detail">Deposit: $100<br>
 								Principal back: Yes<br>
 								Compounding: Not available<br>
-								Earning: every 5 business days
+								<u>Earning: every 5 business days</u></div>
 							</td>
-							<td><b>Basic Monthly Partner</b><br>
+							<td class="plan"><h4><b>Basic Monthly Partner</b></h4><br>
 								<b>15%monthly</b><br>
-								for 60 business days<br>
-								Deposit: $100<br>
+								<small>for 60 business days</small><br>
+								<hr style="width: 80%; margin-top: 7px; margin-bottom: 7px;">
+								<div class="deposit-detail">Deposit: $100<br>
 								Principal back: Yes<br>
 								Compounding: Not available<br>
-								Earning: every 20 business days
+								<u>Earning: every 20 business days</u></div>
 							</td>
 						</tr>
-						<tr><td class="text-right">Advance</td>
-							<td><b>Advance Weekly Partner</b><br>
+						<tr><td class="text-right text-middle">Advance</td>
+							<td class="plan"><h4><b>Advance Weekly Partner</b></h4><br>
 								<b>5%weekly</b><br>
-								for 60 business days<br>
-								Deposit: $1000<br>
+								<small>for 60 business days</small><br>
+								<hr style="width: 80%; margin-top: 7px; margin-bottom: 7px;">
+								<div class="deposit-detail">Deposit: $1000<br>
 								Principal back: Yes<br>
 								Compounding: Not available<br>
-								Earning: every 5 business days
+								<u>Earning: every 5 business days</u></div>
 							</td>
-							<td><b>Advance Monthly Partner</b><br>
+							<td class="plan"><h4><b>Advance Monthly Partner</b></h4><br>
 								<b>25%monthly</b><br>
-								for 60 business days<br>
-								Deposit: $1000<br>
+								<small>for 60 business days</small><br>
+								<hr style="width: 80%; margin-top: 7px; margin-bottom: 7px;">
+								<div class="deposit-detail">Deposit: $1000<br>
 								Principal back: Yes<br>
 								Compounding: Not available<br>
-								Earning: every 20 business days
+								<u>Earning: every 20 business days</u></div>
 							</td>
 						</tr>
 						</tbody>
@@ -111,7 +115,6 @@
 					You are welcome to use our Calculator to better understand the effect of compounding.
 				</p-->
 				
-				<?php endif;?>
 				
 				<br>
 				<br>
@@ -123,6 +126,7 @@
 						</div>
 					</div>
 				</div>
+				<?php endif;?>
 				
 			</div>
 		</div>
@@ -133,5 +137,14 @@
 <script>
 	$(document).ready(function(){
 		$('th', '#activeInvestment').addClass('success').css('vertical-align', 'middle');
+		$('.plan').hover(function(){
+			$(this).addClass('warning');
+			$('.deposit-detail', this).css('font-weight', 'bold');
+			$(this).css('cursor', 'pointer');
+		}, function(){
+			$(this).removeClass('warning');
+			$('.deposit-detail', this).css('font-weight', '');
+			$(this).css('cursor', 'pointer');
+		});
 	});
 </script>

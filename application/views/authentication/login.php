@@ -1,7 +1,7 @@
 <div style="max-width: 390px; margin: auto; margin-top: 5px;">
 	<?=form_open('authentication/authen/login')?>
 		<div class="panel panel-info">
-			<div class="panel-heading">Account Login</div>
+			<div class="panel-heading text-center"><b>Account Login</b></div>
 			<div class="panel-body">
 				<div class="row">
 					<div class="col-md-3">Email:</div>
